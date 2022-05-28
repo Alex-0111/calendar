@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33,32,32);
+}
+
+.calendar{
+    width: 26.875rem;
+    height: 31.25rem;
+    background-color:aliceblue;
+    box-shadow: 
+        10px 10px 20px rgba(0, 0, 0, 0.669),
+        -10px -10px -20px rgba(0, 0, 0, 0.436);
+    .month{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        text-align: center;
+        width: 100%;
+        height: 20%;
+        padding: 20px 30px;
+        background-color: #ff9a8b;
+        background-image: linear-gradient(
+            90deg,
+            #ff9a8b 0%,
+            #ff6a88 55%,
+            #ff99ac 100%
+        );
+        h1{
+            text-transform: uppercase;
+            font-size: 1.875rem;
+        }
+        img{
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            transition: 0.1s;
+            &:hover{
+                opacity: 0.8;
+            }
+
+        }
+    }
+}
+
